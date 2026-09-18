@@ -201,7 +201,7 @@
 </header>
 
 <main>
-  <p class="last-updated">Son güncelleme / Last updated: Ağustos 2026</p>
+  <p class="last-updated">Son güncelleme / Last updated: Eylül 2026</p>
 
   <section>
     <h2><span class="icon">📋</span> Genel Bilgi</h2>
@@ -215,7 +215,7 @@
     <h2><span class="icon">📡</span> Toplanan Veriler</h2>
     <p>Uygulama aşağıdaki verileri kullanır:</p>
     <ul>
-      <li><strong>Konum verisi (opsiyonel):</strong> Namaz vakitleri için il seçimi yapılırken veya yakın camileri bulmak için konum izni talep edilebilir. Bu veri yalnızca cihazınızda işlenir, sunucularımıza gönderilmez.</li>
+      <li><strong>Konum verisi (opsiyonel):</strong> Bulunduğunuz şehrin otomatik tespiti, Türkiye dışındaki şehirlerin namaz vakitleri ve yakın camileri bulmak için konum izni talep edilebilir. Konumunuz kendi sunucularımızda saklanmaz; bu özelliklerde yalnızca ilgili üçüncü taraf servise anlık olarak iletilir (aşağıdaki "Üçüncü Taraf Hizmetler" bölümüne bakınız).</li>
       <li><strong>Bildirim izni:</strong> Günlük hatırlatmalar için yerel bildirim izni talep edilir. Bu veriler yalnızca cihazınızda kalır.</li>
       <li><strong>Yerel depolama (localStorage):</strong> Uygulama tercihleri (tema, seçili il, Kuran okuma ilerlemeniz, zikir sayacı) cihazınızda yerel olarak saklanır.</li>
     </ul>
@@ -226,10 +226,14 @@
     <p>Uygulama aşağıdaki üçüncü taraf hizmetlerden faydalanmaktadır:</p>
     <ul>
       <li><strong>Google AdMob:</strong> Reklam gösterimi için kullanılır. AdMob, cihaz tanımlayıcıları ve reklam kimliği kullanabilir. Google'ın gizlilik politikası: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></li>
-      <li><strong>Namaz vakitleri API:</strong> Türkiye'deki il namaz vakitlerini almak için harici bir API kullanılır. Bu isteklerde kişisel veri gönderilmez.</li>
-      <li><strong>OpenStreetMap / Overpass API:</strong> Yakın camiler özelliği için kullanılır. Konum verisi yalnızca cami araması sırasında anlık olarak kullanılır.</li>
-      <li><strong>MyMemory API:</strong> Günlük hadis çevirisi için kullanılır. Kişisel veri gönderilmez.</li>
+      <li><strong>AlAdhan API (api.aladhan.com):</strong> Yalnızca <em>Türkiye dışındaki</em> şehirlerin namaz vakitleri için kullanılır. Türkiye'deki tüm illerin vakitleri %100 cihaz üzerinde, çevrimdışı hesaplanır ve bunun için hiçbir sunucuya istek gönderilmez.</li>
+      <li><strong>OpenStreetMap / Overpass API:</strong> Yakın camiler özelliği için kullanılır. Konum koordinatınız yalnızca cami araması sırasında anlık olarak bu servise iletilir, saklanmaz.</li>
+      <li><strong>OpenStreetMap Nominatim:</strong> Şehir / ilçe arama ve adres çözümleme için kullanılır.</li>
+      <li><strong>BigDataCloud:</strong> Konum izni verdiğinizde bulunduğunuz şehri otomatik tespit etmek için kullanılır.</li>
+      <li><strong>ip2c.org:</strong> Konum izni verilmediğinde ülke tespiti için IP tabanlı yedek yöntem olarak kullanılır.</li>
+      <li><strong>OpenStreetMap ve Esri (ArcGIS) harita karoları:</strong> Cami haritasının görüntülenmesi için harita görselleri bu servislerden alınır.</li>
     </ul>
+    <p>Bu servislere kimlik bilgisi, e-posta veya hesap verisi gönderilmez; yalnızca ilgili özelliğin çalışması için gereken konum/arama bilgisi anlık olarak iletilir.</p>
   </section>
 
   <section>
@@ -244,8 +248,8 @@
 
   <section>
     <h2><span class="icon">📍</span> Konum İzinleri</h2>
-    <p>Yakın Camiler özelliği için konum iznine ihtiyaç duyulabilir. Bu izin opsiyoneldir; izin vermezseniz bu özellik çalışmaz, ancak uygulamanın diğer tüm özellikleri sorunsuz çalışmaya devam eder.</p>
-    <p>Konum veriniz hiçbir sunucuya gönderilmez ve yalnızca cami araması sırasında anlık olarak kullanılır.</p>
+    <p>Konum izni şu özellikler için talep edilir: bulunduğunuz şehrin otomatik tespiti, Türkiye dışındaki şehirlerin namaz vakitleri ve Yakın Camiler. Bu izin opsiyoneldir; izin vermezseniz şehri elle seçebilirsiniz ve uygulamanın diğer tüm özellikleri sorunsuz çalışmaya devam eder.</p>
+    <p>Konum veriniz kendi sunucularımızda saklanmaz. Türkiye içindeki namaz vakitleri cihazınızda çevrimdışı hesaplandığı için bu durumda konumunuz hiçbir yere gönderilmez. Otomatik şehir tespiti, Türkiye dışı vakitler ve cami araması sırasında ise koordinatınız yalnızca o işlem için ilgili üçüncü taraf servise anlık olarak iletilir.</p>
   </section>
 
   <section>
@@ -268,7 +272,7 @@
 </main>
 
 <footer>
-  © 2025 13 Media — Ezan Saatleri. Tüm hakları saklıdır.
+  © 2026 13 Media — Ezan Saatleri. Tüm hakları saklıdır.
 </footer>
 
 </body>
